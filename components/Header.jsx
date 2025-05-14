@@ -8,7 +8,7 @@ const Header = () => {
   // Scroll to a specific section
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
-    const offset = 80; // Adjust this value to match your header's height
+    const offset = 70; // Adjust this value to match your header's height
     const sectionPosition = section?.offsetTop || 0;
     const scrollPosition = sectionPosition - offset;
 
@@ -21,16 +21,16 @@ const Header = () => {
   // Navigation items
   const navItems = [
     { id: "landing", label: "Home" },
-    { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
+    { id: "project", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
-    <header className="w-full sticky top-0 z-[50] flex items-center justify-center gap-x-30 py-4 shadow-md bg-[var(--background)] dark:bg-[var(--background)] text-main dark:text-main">
+    <header className="text-main dark:text-main sticky top-0 z-[50] flex w-full items-center justify-center gap-x-30 bg-[var(--background)] py-4 shadow-md dark:bg-[var(--background)]">
       {/* Dev Name */}
       <h1
-        className="text-2xl font-semibold cursor-pointer"
+        className="cursor-pointer text-2xl font-semibold"
         onClick={() => scrollToSection("landing")}
       >
         Amenyuwel
@@ -42,7 +42,7 @@ const Header = () => {
           <button
             key={item.id}
             onClick={() => scrollToSection(item.id)}
-            className="p-2 cursor-pointer font-semibold text-xl text-main dark:text-main"
+            className="text-main dark:text-main cursor-pointer p-2 text-xl font-semibold"
           >
             {item.label}
           </button>
@@ -52,7 +52,7 @@ const Header = () => {
       {/* Dark Mode Toggle */}
       <button
         onClick={toggleDarkMode}
-        className="p-2 rounded-full cursor-pointer bg-[var(--opposite)] dark:bg-[var(--opposite)]"
+        className="cursor-pointer rounded-full bg-[var(--opposite)] p-2 dark:bg-[var(--opposite)]"
         aria-label="Toggle Dark Mode"
       >
         {darkMode ? (
