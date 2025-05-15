@@ -7,8 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        cover: "var(--cover)",
+        highlight: "var(--highlight)",
         background: "var(--background)",
         textMain: "var(--text-main)",
+        textSecondary: "var(--text-secondary)",
+        textWhite: "var(--text-white)",
         opposite: "var(--opposite)",
       },
       fontFamily: {

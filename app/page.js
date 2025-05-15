@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import LandingPage from "@/app/pages/landing/page";
 import ProjectPage from "@/app/pages/projects/page";
 import ExperiencePage from "@/app/pages/experience/page";
-import ContactPage from "@/app/pages/contact/page";
+import CollabPage from "@/app/pages/collab/page";
 
 const page = () => {
   return (
@@ -21,8 +21,8 @@ const page = () => {
       <section id="project">
         <ProjectPage />
       </section>
-      <section id="contact">
-        <ContactPage />
+      <section id="collab">
+        <CollabPage />
       </section>
     </div>
   );

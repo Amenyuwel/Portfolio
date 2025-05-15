@@ -2,14 +2,14 @@ const timelineItems = [
   {
     title: "Tagisan ng Talino",
     role: "Front-End Developer",
-    period: "October 2023 – March 2024",
+    period: "March 2024",
     description:
       "Collaborated with a team to build an Android application within a 6-hour development challenge.",
   },
   {
     title: "Thesis Researcher",
     role: "Full-Stack Mobile Developer",
-    period: "November 2023 – November 2024",
+    period: "November 2025",
     description:
       "Built Harvest Assistant: A Smart Pest Management and Enhanced Grain Production, a mobile app that leverages image classification to detect pests in corn and rice crops.",
   },

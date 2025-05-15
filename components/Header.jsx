@@ -22,8 +22,7 @@ const Header = () => {
   const navItems = [
     { id: "landing", label: "Home" },
     { id: "experience", label: "Experience" },
-    { id: "project", label: "Projects" },
-    { id: "contact", label: "Contact" },
+    { id: "project", label: "Projects & Contributions" },
   ];
 
   return (
@@ -33,7 +32,7 @@ const Header = () => {
         className="cursor-pointer text-2xl font-semibold"
         onClick={() => scrollToSection("landing")}
       >
-        Amenyuwel
+        &lt; Amenyuwel /&gt;
       </h1>
 
       {/* Navigation Buttons */}
