@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,28 +11,22 @@ const Footer = () => {
       ></div>
       <div className="mt-4 flex space-x-4">
         <a
-          href="https://twitter.com"
+          href="https://github.com/Amenyuwel"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-400"
+          className="text-main rounded-lg p-2"
+          aria-label="GitHub Profile"
         >
-          Twitter
+          <FaGithub className="h-8 w-8" />
         </a>
         <a
-          href="https://github.com"
+          href="https://www.linkedin.com/in/amenyuwel/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-gray-400"
+          className="text-main rounded-lg p-2"
+          aria-label="LinkedIn Profile"
         >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-600"
-        >
-          LinkedIn
+          <FaLinkedin className="h-8 w-8" />
         </a>
       </div>
       <p className="mt-4 text-sm">
