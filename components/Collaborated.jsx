@@ -26,7 +26,7 @@ const Collaborated = () => {
         />
         <section className="text-main absolute bottom-0 flex w-full translate-y-full cursor-pointer flex-col bg-[var(--cover)] p-4 transition-transform duration-500 ease-in-out group-hover:translate-y-0">
           <h1 className="text-2xl font-bold">ICT-Thesis Library Portal</h1>
-          <p className="mt-2 text-sm font-medium">
+          <p className="text-s mt-2 font-medium">
             Contributed to the development of a library portal for the <br />
             ICT department at STI College, General Santos City.
           </p>
@@ -95,7 +95,7 @@ const Collaborated = () => {
         />
         <section className="text-main absolute bottom-0 flex w-full translate-y-full cursor-pointer flex-col bg-[var(--cover)] p-4 transition-transform duration-500 ease-in-out group-hover:translate-y-0">
           <h1 className="text-2xl font-bold">Kave Pharmacy</h1>
-          <p className="mt-2 text-sm font-medium">
+          <p className="text-s mt-2 font-medium">
             Contributed to the development of a POS system <br />
             for Kave Pharmacy during my internship at Kave Guild: Your Web3
             Ally.

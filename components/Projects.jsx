@@ -26,7 +26,7 @@ const Projects = () => {
         />
         <section className="text-main absolute bottom-0 flex w-full translate-y-full cursor-pointer flex-col bg-[var(--cover)] p-4 transition-transform duration-500 ease-in-out group-hover:translate-y-1">
           <h1 className="text-2xl font-bold">AI-REFINE</h1>
-          <p className="mt-2 text-sm font-medium">
+          <p className="text-s mt-2 font-medium">
             Generate augmented data variants effortlessly, simply drag <br />
             and drop your image, then adjust the augmentation intensity to your
             preference.
@@ -99,7 +99,7 @@ const Projects = () => {
             Harvest Assistant: A Smart Pest Management and Enhanced Grain
             Production
           </h1>
-          <p className="mt-2 text-sm font-medium">
+          <p className="text-s mt-2 font-medium">
             A thesis project developed at STI–General Santos City, designed to
             systematically <br /> bridge the gap between the City
             Agriculturist's Office and the farmers of General Santos City.
