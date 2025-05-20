@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const Button = ({ href = "/", children = "Learn More", ...props }) => {
+const LearnMore = ({ href = "/", children = "Learn More", ...props }) => {
   const router = useRouter();
   return (
     <button
@@ -14,4 +14,4 @@ const Button = ({ href = "/", children = "Learn More", ...props }) => {
   );
 };
 
-export default Button;
+export default LearnMore;

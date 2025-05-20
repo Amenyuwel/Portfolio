@@ -1,19 +1,25 @@
 "use client";
 import React from "react";
-import Collaborated from "@/components/Collaborated";
+import MyContribution from "@/components/MyContribution";
 import Footer from "@/components/Footer";
 import { FaAngleDoubleUp } from "react-icons/fa";
+import Button from "@/components/LearnMore";
 
-const CollabPage = () => {
+const ContributionPage = () => {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-center bg-[var(--background)]">
-      <section className="mb-8 flex h-full w-[45%] flex-col">
+      <section className="mb-8 flex h-full w-full max-w-3xl flex-col">
         <article className="mb-8">
-          <h1 className="text-main w-full bg-[var(--background)] py-8 text-left text-5xl font-bold">
+          <h1 className="text-main w-full bg-[var(--background)] text-left text-5xl font-bold">
             My Contributions
           </h1>
         </article>
-        <Collaborated />
+        <MyContribution />
+        <div className="flex w-full justify-end">
+          <button className="p-2 cursor-pointer rounded-lg bg-[var(--highlight)] text-[var(--text-white)]">
+            VIEW MORE
+          </button>
+        </div>
       </section>
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -26,4 +32,4 @@ const CollabPage = () => {
   );
 };
 
-export default CollabPage;
+export default ContributionPage;

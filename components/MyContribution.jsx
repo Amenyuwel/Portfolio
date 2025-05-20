@@ -1,13 +1,13 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Links from "@/components/Links";
-import Button from "@/components/Button";
+import Button from "@/components/LearnMore";
 
-const Collaborated = () => {
+const MyContribution = () => {
   return (
-    <main className="bg-main mb-8 grid h-full w-full flex-grow grid-cols-1 gap-4 rounded-lg border-1 border-[var(--text-secondary)] p-4">
+    <main className="bg-main mb-8 grid h-full w-full flex-grow grid-cols-1 gap-4 rounded-lg">
       {/* STI Thesis Library Portal */}
-      <article className="bg-main group relative overflow-hidden rounded-lg border-1 border-[var(--text-secondary)] shadow-md">
+      <article className="bg-main group relative overflow-hidden rounded-lg shadow-xl shadow-[rgba(0,0,0,0.2)]">
         {/* GitHub Link Button */}
         <a
           href={Links.github.thesisLibrary.link}
@@ -76,7 +76,7 @@ const Collaborated = () => {
       </article>
 
       {/* Kave Pharmacy */}
-      <article className="bg-main group relative overflow-hidden rounded-lg border-1 border-[var(--text-secondary)] shadow-md">
+      <article className="bg-main group relative overflow-hidden rounded-lg shadow-xl shadow-[rgba(0,0,0,0.2)]">
         {/* GitHub Link Button */}
         <a
           href={Links.github.kavePharmacy.link}
@@ -166,4 +166,4 @@ const Collaborated = () => {
   );
 };
 
-export default Collaborated;
+export default MyContribution;
