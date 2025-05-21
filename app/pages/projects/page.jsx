@@ -13,7 +13,7 @@ const ProjectPage = () => {
         </article>
         <MyProjects />
         <div className="flex w-full justify-end">
-          <button className="h-8 w-16 cursor-pointer rounded-lg bg-[var(--highlight)] text-[var(--text-white)]">
+          <button className="h-8 w-16 cursor-pointer rounded-lg font-semibold text-[var(--opposite)] underline">
             MORE
           </button>
         </div>

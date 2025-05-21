@@ -159,7 +159,7 @@ const MyContribution = () => {
               </span>
             </div>
           </div>
-          <Button href="/collab" />
+          <Button href="/pages/contributions" />
         </section>
       </article>
     </main>

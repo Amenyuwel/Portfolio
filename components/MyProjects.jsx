@@ -163,7 +163,7 @@ const MyProjects = () => {
               </span>
             </div>
           </div>
-          <Button />
+          <Button href="/projects/details" />
         </section>
       </article>
     </main>

@@ -8,6 +8,7 @@
   --text-secondary: #2c2c2cbf;
   --opposite: #141e22;
   --background: #fafafa;
+  --border-main: #141e22;
 }
 
 html.dark {
@@ -16,6 +17,7 @@ html.dark {
   --text-secondary: #9ca3af;
   --opposite: #fafafa;
   --background: #141e22;
+  --border-main: #fafafa;
 }
 
 body {
@@ -77,7 +79,7 @@ html {
 }
 
 .stack-border {
-  border: 1.5px solid #000;
+  border: 1.5px solid var(--border-main);
   position: relative;
   border-radius: 0; /* Remove rounded corners */
 }
@@ -93,7 +95,7 @@ html {
 .plus:after {
   content: "";
   position: absolute;
-  background: #000;
+  background: var(--border-main);
 }
 
 .plus:before {
@@ -119,10 +121,10 @@ html {
   right: -9px;
 }
 .plus-bl {
-  bottom: -16px;
+  bottom: -17px;
   left: -9px;
 }
 .plus-br {
-  bottom: -16px;
+  bottom: -17px;
   right: -9px;
 }

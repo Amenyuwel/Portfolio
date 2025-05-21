@@ -16,8 +16,8 @@ const ContributionPage = () => {
         </article>
         <MyContribution />
         <div className="flex w-full justify-end">
-          <button className="p-2 cursor-pointer rounded-lg bg-[var(--highlight)] text-[var(--text-white)]">
-            VIEW MORE
+          <button className="h-8 w-16 cursor-pointer rounded-lg font-semibold text-[var(--opposite)] underline">
+            MORE
           </button>
         </div>
       </section>
