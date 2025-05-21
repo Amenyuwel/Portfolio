@@ -71,7 +71,7 @@ const MyContribution = () => {
               </span>
             </div>
           </div>
-          <Button />
+          <Button href="pages/learn-more/thesis-library" />
         </section>
       </article>
 
@@ -159,7 +159,7 @@ const MyContribution = () => {
               </span>
             </div>
           </div>
-          <Button href="/pages/contributions" />
+          <Button href="pages/learn-more/kave-pharmacy" />
         </section>
       </article>
     </main>

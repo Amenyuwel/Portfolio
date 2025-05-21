@@ -72,7 +72,7 @@ const MyProjects = () => {
               </span>
             </div>
           </div>
-          <Button />
+          <Button href="pages/learn-more/ai-refine" />
         </section>
       </article>
 
@@ -163,7 +163,7 @@ const MyProjects = () => {
               </span>
             </div>
           </div>
-          <Button href="/projects/details" />
+          <Button href="pages/learn-more/harvest-assistant" />
         </section>
       </article>
     </main>

@@ -1,5 +1,5 @@
 import "./globals.css";
-import { DarkModeProvider } from "@/context/DarkModeContext";
+import { DarkModeProvider } from "@/context/darkModeContext";
 
 export default function RootLayout({ children }) {
   return (

@@ -7,6 +7,7 @@ import LandingPage from "@/app/pages/landing/page";
 import ProjectPage from "@/app/pages/projects/page";
 import ExperiencePage from "@/app/pages/experience/page";
 import ContributionPage from "@/app/pages/contribution/page";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   return (

@@ -4,20 +4,20 @@
   --cover: #fafafacc;
   --highlight: #4f86f7;
   --text-main: #2c2c2c;
-  --text-white: #fafafa;
+  --text-white: #ebebeb;
   --text-secondary: #2c2c2cbf;
-  --opposite: #141e22;
-  --background: #fafafa;
-  --border-main: #141e22;
+  --opposite: #111111;
+  --background: #ebebeb;
+  --border-main: #111111;
 }
 
 html.dark {
   --cover: #051111cc;
   --text-main: #fafafa;
   --text-secondary: #9ca3af;
-  --opposite: #fafafa;
-  --background: #141e22;
-  --border-main: #fafafa;
+  --opposite: #ebebeb;
+  --background: #111111;
+  --border-main: #ebebeb;
 }
 
 body {
@@ -76,55 +76,4 @@ span {
 
 html {
   scroll-behavior: smooth;
-}
-
-.stack-border {
-  border: 1.5px solid var(--border-main);
-  position: relative;
-  border-radius: 0; /* Remove rounded corners */
-}
-
-.plus {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  pointer-events: none;
-}
-
-.plus:before,
-.plus:after {
-  content: "";
-  position: absolute;
-  background: var(--border-main);
-}
-
-.plus:before {
-  width: 2px;
-  height: 8px;
-  left: 7px;
-  top: 4px;
-}
-
-.plus:after {
-  width: 8px;
-  height: 2px;
-  left: 4px;
-  top: 7px;
-}
-
-.plus-tl {
-  top: -9px;
-  left: -9px;
-}
-.plus-tr {
-  top: -9px;
-  right: -9px;
-}
-.plus-bl {
-  bottom: -17px;
-  left: -9px;
-}
-.plus-br {
-  bottom: -17px;
-  right: -9px;
 }
