@@ -39,7 +39,7 @@ const LandingPage = () => {
       />
 
       <section className="flex h-screen w-[60%] flex-col items-center justify-center">
-        <article className="mt-12 flex h-auto w-full flex-col rounded-lg border-2 border-[var(--border-main)] bg-[var(--background)] p-10 text-3xl font-bold shadow-xl backdrop-blur-sm">
+        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-10 text-3xl font-bold shadow-xl backdrop-blur-sm">
           {/* Name and Links */}
           <header className="mb-6 flex w-full items-center justify-between">
             <h1 className="font-heading text-6xl text-[var(--text-main)]">
@@ -83,8 +83,8 @@ const LandingPage = () => {
           {/* Description */}
           <section className="w-full">
             <h2 className="font-serif text-3xl leading-relaxed text-[var(--text-main)]">
-              Full-Stack Web Developer with a BS in Computer Science, building
-              scalable and user-friendly web applications.
+              Full-Stack Web & Mobile Developer, with a BS in Computer Science. Building
+              scalable and user-friendly web and mobile applications.
             </h2>
           </section>
         </article>
@@ -101,7 +101,7 @@ const LandingPage = () => {
           </a>
           {/* CONTACT */}
           <button
-            className="rounded-lg bg-[var(--opposite)] px-6 py-3 font-semibold text-[var(--background)] transition-opacity hover:opacity-90"
+            className="rounded-lg bg-[var(--opposite)] px-6 py-3 font-semibold text-[var(--background)] transition-opacity hover:opacity-90 cursor-pointer"
             aria-label="Contact Me"
           >
             Contact Me

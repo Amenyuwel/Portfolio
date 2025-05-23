@@ -8,6 +8,7 @@ import ProjectPage from "@/app/pages/projects/page";
 import ExperiencePage from "@/app/pages/experience/page";
 import ContributionPage from "@/app/pages/contribution/page";
 import StacksPage from "@/app/pages/stacks/page";
+import ContactPage from "@/app/pages/contact/page";
 
 const page = () => {
   return (
@@ -27,6 +28,9 @@ const page = () => {
       </section>
       <section id="stacks">
         <StacksPage />
+      </section>
+      <section id="contact">
+        <ContactPage />
       </section>
     </div>
   );
