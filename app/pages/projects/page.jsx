@@ -6,8 +6,8 @@ const ProjectPage = () => {
   return (
     <main className="flex h-auto w-full items-center justify-center bg-[var(--background)]">
       <section className="mb-8 flex h-full w-full max-w-3xl flex-col">
-        <article className="mb-4">
-          <h1 className="text-main w-full bg-[var(--background)] text-left text-5xl font-bold">
+        <article className="mb-8">
+          <h1 className="text-main mt-8 w-full bg-[var(--background)] text-left text-5xl font-bold">
             My Projects
           </h1>
         </article>

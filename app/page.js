@@ -7,7 +7,7 @@ import LandingPage from "@/app/pages/landing/page";
 import ProjectPage from "@/app/pages/projects/page";
 import ExperiencePage from "@/app/pages/experience/page";
 import ContributionPage from "@/app/pages/contribution/page";
-import { useRouter } from "next/navigation";
+import StacksPage from "@/app/pages/stacks/page";
 
 const page = () => {
   return (
@@ -24,6 +24,9 @@ const page = () => {
       </section>
       <section id="contribution">
         <ContributionPage />
+      </section>
+      <section id="stacks">
+        <StacksPage />
       </section>
     </div>
   );

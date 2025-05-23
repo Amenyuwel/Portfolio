@@ -25,6 +25,7 @@ const Header = () => {
     { id: "landing", label: "Home" },
     { id: "experience", label: "Experience" },
     { id: "project", label: "Projects & Contributions" },
+    { id: "stacks", label: "Tech Stack" },
   ];
 
   // Get current path (App Router doesn't provide pathname directly)

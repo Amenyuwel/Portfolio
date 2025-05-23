@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto flex h-40 w-full flex-col items-center justify-center bg-[var(--background)] text-[var(--opposite)]">
       <div
-        style={{ width: "45%", borderTop: "1px solid var(--text-secondary)" }}
+        style={{ width: "100%", borderTop: "1px solid var(--text-secondary)" }}
         className="mt-4"
       ></div>
       <div className="mt-4 flex space-x-4">
