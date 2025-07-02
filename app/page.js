@@ -29,9 +29,6 @@ const page = () => {
       <section id="stacks">
         <StacksPage />
       </section>
-      <section id="contact">
-        <ContactPage />
-      </section>
     </div>
   );
 };
