@@ -5,7 +5,7 @@ import Button from "@/components/LearnMore";
 
 const MyContribution = () => {
   return (
-    <main className="bg-main mb-8 grid h-full w-full flex-grow grid-cols-1 gap-4 rounded-lg">
+    <main className="bg-main mb-8 grid h-full w-full flex-grow grid-cols-1 gap-4 rounded-lg md:grid-cols-1">
       {/* STI Thesis Library Portal */}
       <article className="bg-main group relative overflow-hidden rounded-lg shadow-xl shadow-[rgba(0,0,0,0.2)]">
         {/* GitHub Link Button */}

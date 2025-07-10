@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 
 const Stacks = () => (
   <main className="flex h-full w-full">
-    <section className="grid h-full w-full grid-cols-4 gap-4 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-4">
+    <section className="grid h-full w-full grid-cols-2 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-4">
       <div className="flex transform cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-6 shadow-xl transition-transform hover:scale-105">
         <Icon icon="logos:javascript" className="h-12 w-12" />
         <span className="text-main text-lg font-semibold">JavaScript</span>

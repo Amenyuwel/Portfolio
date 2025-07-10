@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
 import VerticalTimeline from "@/components/VerticalTimeline";
-import timelineItems from "./data/descriptions"; // Fixed import path
+import timelineItems from "./data/descriptions";
 
 const ExperiencePage = () => {
   return (
-    <main className="flex h-screen w-full items-center justify-center bg-[var(--background)]">
-      <section className="flex h-full w-[45%] justify-items-start bg-[var(--background)]">
-        <section className="h-full w-full py-8">
-          <h1 className="text-main mb-8 w-full bg-[var(--background)] py-8 text-left text-5xl font-bold">
-            My Experiences
-          </h1>
-          {/* Pass timelineItems to VerticalTimeline */}
-          <VerticalTimeline items={timelineItems} />
-        </section>
+    <main className="flex min-h-screen w-full items-center justify-center">
+      <section className="container mx-auto px-4 py-8 lg:w-[65%] xl:w-[55%]">
+        <h1 className="text-main mb-8 text-left text-4xl font-bold sm:text-5xl">
+          My Experiences
+        </h1>
+        <VerticalTimeline items={timelineItems} />
       </section>
     </main>
   );

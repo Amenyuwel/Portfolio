@@ -4,10 +4,10 @@ import React from "react";
 
 const ProjectPage = () => {
   return (
-    <main className="flex h-auto w-full items-center justify-center bg-[var(--background)]">
-      <section className="mb-8 flex h-full w-full max-w-3xl flex-col">
+    <main className="flex h-full w-full items-center justify-center py-8">
+      <section className="container mx-auto px-4 lg:w-[50%]">
         <article className="mb-8">
-          <h1 className="text-main mt-8 w-full bg-[var(--background)] text-left text-5xl font-bold">
+          <h1 className="text-main text-left text-4xl font-bold sm:text-5xl">
             My Projects
           </h1>
         </article>

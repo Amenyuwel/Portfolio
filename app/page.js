@@ -12,7 +12,7 @@ import ContactPage from "@/app/pages/contact/page";
 
 const page = () => {
   return (
-    <div>
+    <div className="w-full min-w-0 flex flex-col items-center justify-center overflow-x-hidden">
       <Header />
       <section id="landing">
         <LandingPage />

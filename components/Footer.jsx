@@ -4,12 +4,9 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto flex h-40 w-full flex-col items-center justify-center bg-[var(--background)] text-[var(--opposite)]">
-      <div
-        style={{ width: "100%", borderTop: "1px solid var(--text-secondary)" }}
-        className="mt-4"
-      ></div>
-      <div className="mt-4 flex space-x-4">
+    <footer className="mt-auto flex h-40 w-full flex-col items-center justify-center text-[var(--opposite)]">
+      <div className="mt-4" />
+      <div className="mt-4 flex space-x-4 justify-center">
         <a
           href="https://github.com/Amenyuwel"
           target="_blank"
@@ -29,9 +26,9 @@ const Footer = () => {
           <FaLinkedin className="h-8 w-8" />
         </a>
       </div>
-      <p className="mt-4 text-sm">
+      <span className="mt-4 text-sm text-center">
         &copy; 2025 Emmanuel D Malagamba. All rights reserved.
-      </p>
+      </span>
     </footer>
   );
 };
