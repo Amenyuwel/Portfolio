@@ -40,7 +40,7 @@ const LandingPage = () => {
       />
 
       <section className="flex h-screen w-full flex-col items-center justify-center px-4">
-        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:p-8 lg:w-[42%]">
+        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:p-8 lg:w-[60%]">
           {/* Name and Links */}
           <header className="mb-6 flex w-full flex-col items-center justify-between gap-4 md:mb-8 md:flex-row md:gap-6">
             <div className="flex flex-col space-y-3 md:space-y-4 items-center sm:items-start">
