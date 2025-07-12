@@ -4,6 +4,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import HeroPattern from "@/components/HeroPattern";
 import React, { useState, useEffect } from "react";
 import TiltedCard from "@/ReactBits/TiltedCard/TiltedCard";
+import { FiEye } from "react-icons/fi";
 
 const LandingPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -32,7 +33,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <main className="relative flex h-screen w-full flex-col items-center ">
+    <main className="relative flex h-screen w-full flex-col items-center">
       <HeroPattern
         dotColor={isDarkMode ? "#ebebeb" : "#111111"}
         dotSize={0.5}
@@ -40,28 +41,28 @@ const LandingPage = () => {
       />
 
       <section className="flex h-screen w-full flex-col items-center justify-center px-4">
-        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:p-8 lg:w-[60%]">
+        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:w-[60%] lg:p-8">
           {/* Name and Links */}
           <header className="mb-6 flex w-full flex-col items-center justify-between gap-4 md:mb-8 md:flex-row md:gap-6">
-            <div className="flex flex-col space-y-3 md:space-y-4 items-center sm:items-start">
+            <div className="flex flex-col items-center space-y-3 sm:items-start md:space-y-4">
               <h1 className="font-heading text-center text-3xl text-[var(--text-main)] md:text-left md:text-4xl lg:text-6xl">
                 Emmanuel D. Malagamba
               </h1>
 
               {/* Location */}
-              <section className="mb-4 w-full md:mb-6 sm:text-center xsm:text-center md:text-left">
-                <p className="font-body flex items-center text-lg text-[var(--text-main)] md:text-xl lg:text-2xl justify-center sm:justify-center xsm:justify-center md:justify-start">
+              <section className="xsm:text-center mb-4 w-full sm:text-center md:mb-6 md:text-left">
+                <p className="font-body xsm:justify-center flex items-center justify-center text-lg text-[var(--text-main)] sm:justify-center md:justify-start md:text-xl lg:text-2xl">
                   <MapPinIcon
                     className="mr-3 h-5 w-5 text-red-600"
                     aria-hidden="true"
                   />
-                  <span className="font-semibold text-[var(--text-secondary)] sm:">
+                  <span className="sm: font-semibold text-[var(--text-secondary)]">
                     General Santos, Philippines
                   </span>
                 </p>
               </section>
 
-              <div className="flex-shrink-0 sm:hidden mb-4">
+              <div className="mb-4 flex-shrink-0 sm:hidden">
                 <TiltedCard />
               </div>
 
@@ -90,7 +91,7 @@ const LandingPage = () => {
               </nav>
             </div>
 
-            <div className="flex-shrink-0 lg:mb-15 hidden sm:block">
+            <div className="hidden flex-shrink-0 sm:block lg:mb-15">
               <TiltedCard />
             </div>
           </header>
@@ -107,12 +108,22 @@ const LandingPage = () => {
         <section className="mt-4 flex w-full flex-row items-center justify-center gap-3 md:mt-6 md:gap-4">
           {/* RESUME */}
           <a
-            href="/resume.pdf"
-            download="Emmanuel_Malagamba_Resume.pdf"
+            href="/Resume/Emmanuel_Malagamba_Resume.pdf"
+            download="MyResume.pdf"
             className="rounded-lg bg-[var(--opposite)] px-4 py-2 font-semibold text-[var(--background)] transition-all hover:scale-105 hover:opacity-90 md:px-6 md:py-3"
             aria-label="Download CV"
           >
             Download CV
+          </a>
+          <a
+            href="/Resume/Emmanuel_Malagamba_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 rounded-lg border bg-[var(--opposite)] px-4 py-2 font-semibold text-[var(--background)] transition-all hover:scale-105 hover:bg-[var(--opposite)] hover:text-[var(--background)] md:px-6 md:py-3"
+            aria-label="View CV"
+          >
+            <FiEye className="h-5 w-5 text-[var(--background)]" />
+            View CV
           </a>
         </section>
       </section>
