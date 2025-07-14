@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import {
+  SunIcon,
+  MoonIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 import { useDarkMode } from "@/context/darkModeContext";
 
 const Header = () => {
@@ -47,12 +52,15 @@ const Header = () => {
   };
 
   return (
-    <header className="text-main dark:text-main sticky top-0 z-[50] flex w-full items-center justify-between gap-x-30 bg-[var(--background)] py-4 px-4 shadow-md dark:bg-[var(--background)]">
+    <header className="sticky top-0 z-[50] flex w-full items-center justify-between gap-x-30 bg-[var(--background)] px-4 py-4 shadow-md dark:bg-[var(--background)]">
       {/* Dev Name */}
       <h1
         className="cursor-pointer text-2xl font-semibold"
         onClick={() => {
-          if (typeof window !== "undefined" && window.location.pathname === "/") {
+          if (
+            typeof window !== "undefined" &&
+            window.location.pathname === "/"
+          ) {
             scrollToSection("landing");
           } else {
             setTimeout(() => {
@@ -66,7 +74,7 @@ const Header = () => {
       </h1>
 
       {/* Desktop Navigation - only visible above 768px */}
-      <nav className="hidden [@media(min-width:769px)]:flex space-x-4">
+      <nav className="hidden space-x-4 [@media(min-width:769px)]:flex">
         {navItems.map((item) => (
           <button
             key={item.id}
@@ -80,21 +88,21 @@ const Header = () => {
 
       {/* Hamburger Icon (visible 768px and below) */}
       <button
-        className="[@media(min-width:769px)]:hidden p-2 small:mr-2 md:ml-10"
+        className="small:mr-2 p-2 md:ml-10 [@media(min-width:769px)]:hidden"
         onClick={() => setMobileMenuOpen((prev) => !prev)}
         aria-label="Open Menu"
       >
         {mobileMenuOpen ? (
-          <XMarkIcon className="h-7 w-7 text-main dark:text-main" />
+          <XMarkIcon className="text-main dark:text-main h-7 w-7" />
         ) : (
-          <Bars3Icon className="h-7 w-7 text-main dark:text-main" />
+          <Bars3Icon className="text-main dark:text-main h-7 w-7" />
         )}
       </button>
 
       {/* Dark Mode Toggle */}
       <button
         onClick={toggleDarkMode}
-        className="ml-2 cursor-pointer rounded-full bg-[var(--opposite)] p-2 dark:bg-[var(--opposite)] lg:flex hidden"
+        className="ml-2 hidden cursor-pointer rounded-full bg-[var(--opposite)] p-2 lg:flex dark:bg-[var(--opposite)]"
         aria-label="Toggle Dark Mode"
       >
         {darkMode ? (
@@ -112,13 +120,13 @@ const Header = () => {
             className="absolute top-4 right-4 p-2"
             aria-label="Close Menu"
           >
-            <XMarkIcon className="h-7 w-7 text-main dark:text-main" />
+            <XMarkIcon className="text-main dark:text-main h-7 w-7" />
           </button>
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleNavClick(item.id)}
-              className="mb-6 text-xl font-semibold text-main dark:text-main sm:text-2xl"
+              className="text-main dark:text-main mb-6 text-xl font-semibold sm:text-2xl"
             >
               {item.label}
             </button>

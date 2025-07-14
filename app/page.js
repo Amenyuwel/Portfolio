@@ -8,11 +8,13 @@ import ProjectPage from "@/app/pages/projects/page";
 import ExperiencePage from "@/app/pages/experience/page";
 import ContributionPage from "@/app/pages/contribution/page";
 import StacksPage from "@/app/pages/stacks/page";
-import ContactPage from "@/app/pages/contact/page";
+import Footer from "@/components/Footer";
+
+// import ContactPage from "@/app/pages/contact/page";
 
 const page = () => {
   return (
-    <div className="w-full min-w-0 flex flex-col items-center justify-center overflow-x-hidden">
+    <main className="flex flex-col items-center justify-center">
       <Header />
       <section id="landing">
         <LandingPage />
@@ -29,7 +31,10 @@ const page = () => {
       <section id="stacks">
         <StacksPage />
       </section>
-    </div>
+      <section id="footer">
+        <Footer />
+      </section>
+    </main>
   );
 };
 

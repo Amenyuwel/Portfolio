@@ -6,7 +6,7 @@ import React from "react";
 
 const AiRefinePage = () => {
   return (
-    <main className="flex min-h-screen w-full flex-col bg-[var(--background)]">
+    <main className="flex h-screen w-full flex-col bg-[var(--background)]">
       <Header />
       <section className="flex w-full flex-1 flex-col items-center">
         <div className="w-[45%] p-8">
