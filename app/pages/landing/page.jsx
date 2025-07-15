@@ -41,7 +41,7 @@ const LandingPage = () => {
       />
 
       <section className="flex h-screen w-full flex-col items-center justify-center px-4">
-        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:w-[50%] lg:p-8">
+        <article className="flex h-auto w-full flex-col rounded-lg border-2 border-[var(--opposite)] bg-[var(--background)] p-4 text-xl font-bold shadow-xl backdrop-blur-sm md:p-6 lg:w-[65%] xl:w-[40%] lg:p-8">
           {/* Name and Links */}
           <header className="mb-6 flex w-full flex-col items-center justify-between gap-4 md:mb-8 md:flex-row md:gap-6">
             <div className="flex flex-col items-center space-y-3 sm:items-start md:space-y-4">
@@ -98,8 +98,8 @@ const LandingPage = () => {
 
           {/* Description */}
           <section className="mb-2 w-full">
-            <h2 className="font-serif text-xl leading-relaxed text-[var(--text-main)] md:text-2xl lg:text-3xl">
-              Full-Stack Web & Mobile Developer, with a BS in Computer Science.
+            <h2 className="font-serif text-xl leading-relaxed text-[var(--text-main)] md:text-2xl lg:text-3xl text-justify">
+              Full-Stack Web & Mobile Developer, with a Bachelor's degree in Computer Science.
               Building scalable and user-friendly web and mobile applications.
             </h2>
           </section>

@@ -15,11 +15,14 @@ const VerticalTimeline = ({ items }) => {
   const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   return (
-    <div ref={ref} className="relative h-full w-screen">
+    <div ref={ref} className="relative h-full w-full">
       {/* Animated vertical line, limiting the line for 94%*/}
       <motion.div
-        className="absolute top-0 bottom-0 left-4.5 ml-4 w-1 origin-top bg-[var(--highlight)]"
-        style={{ scaleY }}
+        className="absolute top-0 bottom-0 left-4.5 ml-4 w-1 origin-top rounded-xl"
+        style={{
+          scaleY,
+          background: "linear-gradient(to bottom, #2c2c2c, #4f86f7)", // blue to dark gray
+        }}
       />
 
       {items.map((item, index) => (
