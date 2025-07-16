@@ -6,7 +6,7 @@ export const contributions = [
     image: "./images/Daikin-Admin.PNG",
     githubLink: "https://github.com/VKx64/DK-Admin",
     isPrivate: true,
-    learnMorePath: "pages/learn-more/daikin-sase",
+    learnMorePath: "pages/learn-more/e-commerce",
     techStack: [
       { name: "Next.js", icon: "skill-icons:nextjs-dark" },
       { name: "Tailwind CSS", icon: "devicon:tailwindcss" },

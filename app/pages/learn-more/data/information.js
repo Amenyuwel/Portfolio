@@ -48,7 +48,7 @@ const moreInformation = [
   },
 
   {
-    title: "Daikin Appliance E-commerce",
+    title: "Appliance Shop E-commerce Website",
     role: "Full-Stack Developer",
     summary:
       "Implemented sales forecasting using Facebook Prophet and visualized results through a dynamic analytics page.",
