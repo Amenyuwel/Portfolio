@@ -36,10 +36,10 @@ const Stacks = () => (
         <Icon icon="logos:tensorflow" className="h-12 w-12" />
         <span className="text-lg font-semibold">TensorFlow</span>
       </div>
-      <div className="flex transform cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-6 shadow-xl transition-transform hover:scale-105">
+      {/* <div className="flex transform cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-6 shadow-xl transition-transform hover:scale-105">
         <Icon icon="logos:docker-icon" className="h-12 w-12" />
         <span className="text-lg font-semibold">Docker</span>
-      </div>
+      </div> */}
       <div className="flex transform cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg border-1 border-gray-700 bg-[var(--background)] p-6 shadow-xl transition-transform hover:scale-105">
         <Icon icon="logos:python" className="h-12 w-12" />
         <span className="text-lg font-semibold">Python</span>

@@ -5,7 +5,7 @@ import Button from "@/components/LearnMore";
 
 const ProjectsGrid = () => {
   return (
-    <div className="grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-4 h-full w-full">
       {projects.map((project, index) => (
         <article
           key={index}
