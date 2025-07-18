@@ -16,7 +16,7 @@ const StackPage = () => {
         <Stacks />
         <div className="flex w-full justify-end">
         </div>
-        <div className="place-items-center p-10">
+        <div className="flex justify-center items-center p-10">
           <ScrollUp />
         </div>
       </section>
