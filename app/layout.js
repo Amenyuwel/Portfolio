@@ -1,6 +1,6 @@
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
-import { DarkModeProvider } from "@/context/darkModeContext"; // Corrected import path
+import { DarkModeProvider } from "@/context/DarkModeContext"; // Corrected import path
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",

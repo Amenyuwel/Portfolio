@@ -6,7 +6,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { useDarkMode } from "@/context/darkModeContext";
+import { useDarkMode } from "@/context/DarkModeContext";
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
