@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Stacks from "@/components/Stacks";
 import ScrollUp from "@/components/ScrollUp";

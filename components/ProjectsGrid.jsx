@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Icon } from "@iconify/react";
 import { projects } from "@/app/newProjects"; // Import projects data
