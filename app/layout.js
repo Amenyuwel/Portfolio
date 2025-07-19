@@ -60,7 +60,7 @@ export const metadata = {
     creator: "@amenyuwel",
   },
   verification: {
-    google: "google-site-verification-code", // Replace with actual verification code
+    google: "n9hY5nQJTcNNHR0Ga1V_gSMEReCcMivl8HksBdpViqo",
   },
   alternates: {
     canonical: "https://amenyuwel.netlify.app",

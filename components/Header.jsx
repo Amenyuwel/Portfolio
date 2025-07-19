@@ -55,14 +55,27 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-[50] flex w-full items-center justify-between gap-x-30 bg-[var(--background)] px-4 py-4 shadow-md dark:bg-[var(--background)]">
       {/* Dev Name */}
-      <h1
+      <span
         className="cursor-pointer text-2xl font-semibold"
         onClick={() => {
           if (
             typeof window !== "undefined" &&
             window.location.pathname === "/"
           ) {
-            scrollToSection("landing");
+            // Check if we're already at the landing section
+            const landingSection = document.getElementById("landing");
+            const currentScrollY = window.scrollY;
+            const landingPosition = landingSection?.offsetTop || 0;
+            const offset = 70;
+
+            // Check if we're within the landing section (accounting for offset)
+            if (currentScrollY <= landingPosition + offset) {
+              // We're at landing, so refresh the page
+              window.location.reload();
+            } else {
+              // We're not at landing, so scroll to it
+              scrollToSection("landing");
+            }
           } else {
             setTimeout(() => {
               router.push("/");
@@ -70,9 +83,10 @@ const Header = () => {
           }
           setMobileMenuOpen(false);
         }}
+        aria-label="Go to homepage"
       >
         &lt; Amenyuwel /&gt;
-      </h1>
+      </span>
 
       {/* Desktop Navigation - only visible above 768px */}
       <nav className="hidden space-x-4 [@media(min-width:769px)]:flex">
