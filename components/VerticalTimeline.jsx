@@ -34,10 +34,10 @@ const VerticalTimeline = ({ items }) => {
 
           {/* Content */}
           <div className="ml-4 pr-4">
-            <h1 className="text-main text-2xl font-bold sm:text-3xl">
+            <h3 className="text-main text-2xl font-bold sm:text-3xl">
               {item.title}
-            </h1>
-            <h2 className="text-lg font-semibold">{item.role}</h2>
+            </h3>
+            <h4 className="text-lg font-semibold">{item.role}</h4>
             <p className="text-[var(--text-secondary)]">{item.period}</p>
             <ul className="mt-2 list-disc pr-2 pl-4 text-justify text-[var(--text-secondary)]">
               {item.description.map((desc, idx) => (

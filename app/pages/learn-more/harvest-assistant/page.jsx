@@ -2,7 +2,28 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
+
+export const metadata = {
+  title: "Harvest Assistant Project - Emmanuel D. Malagamba",
+  description: "A thesis project designed to bridge the gap between the City Agriculturist's Office and farmers. Features pest identification and yield forecasting using deep learning.",
+  keywords: "Harvest Assistant, Agriculture, Machine Learning, TensorFlow, Pest Detection, Yield Forecasting, Mobile Development",
+  openGraph: {
+    title: "Harvest Assistant Project - Emmanuel D. Malagamba",
+    description: "Agriculture-focused app with pest identification and yield forecasting using deep learning.",
+    images: ["/images/Harvest-Assistant/Harvest_Mobile-Dashboard.jpg"],
+    url: "https://amenyuwel.netlify.app/pages/learn-more/harvest-assistant",
+  },
+  twitter: {
+    title: "Harvest Assistant Project - Emmanuel D. Malagamba",
+    description: "Agriculture-focused app with pest identification and yield forecasting using deep learning.",
+    images: ["/images/Harvest-Assistant/Harvest_Mobile-Dashboard.jpg"],
+  },
+  alternates: {
+    canonical: "https://amenyuwel.netlify.app/pages/learn-more/harvest-assistant",
+  },
+};
 
 const HarvestAssistantPage = () => {
   const projectData = moreInformation.find(
@@ -27,6 +48,13 @@ const HarvestAssistantPage = () => {
     <main className="flex min-h-screen w-full flex-col bg-[var(--background)]">
       <Header />
       <article className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start overflow-y-auto px-6 py-12">
+        <Breadcrumb 
+          items={[
+            { label: "Projects", href: "/#project" },
+            { label: "Harvest Assistant" }
+          ]} 
+        />
+        
         <header>
           <h1 className="mb-6 text-left text-4xl font-bold">
             {projectData.title}
@@ -61,16 +89,16 @@ const HarvestAssistantPage = () => {
           <section>
             <div className="grid w-full grid-cols-1 gap-10">
               {projectData.snippets.map((snippet, index) => (
-                <div key={index} className="flex flex-col items-start">
-                  <p className="m-3 place-self-center text-2xl font-medium">
-                    {snippet.label}
-                  </p>
+                <figure key={index} className="flex flex-col items-start">
                   <img
                     src={snippet.image}
                     alt={snippet.alt || snippet.label}
                     className="w-full rounded-xl object-cover shadow-md"
                   />
-                </div>
+                  <figcaption className="m-3 place-self-center text-2xl font-medium">
+                    {snippet.label}
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </section>

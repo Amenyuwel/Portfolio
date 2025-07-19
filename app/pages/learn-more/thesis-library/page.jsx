@@ -2,7 +2,28 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
+
+export const metadata = {
+  title: "Thesis Library Portal - Emmanuel D. Malagamba",
+  description: "Enhanced UI performance and responsive design for academic thesis library portal using React and TailwindCSS.",
+  keywords: "Thesis Library, Academic Portal, React, TailwindCSS, UI/UX, Responsive Design, Frontend Development",
+  openGraph: {
+    title: "Thesis Library Portal - Emmanuel D. Malagamba",
+    description: "Academic thesis library portal with enhanced responsive design.",
+    images: ["/images/Thesis Library/Library_Landing-Page.PNG"],
+    url: "https://amenyuwel.netlify.app/pages/learn-more/thesis-library",
+  },
+  twitter: {
+    title: "Thesis Library Portal - Emmanuel D. Malagamba",
+    description: "Academic thesis library portal with enhanced responsive design.",
+    images: ["/images/Thesis Library/Library_Landing-Page.PNG"],
+  },
+  alternates: {
+    canonical: "https://amenyuwel.netlify.app/pages/learn-more/thesis-library",
+  },
+};
 
 const ThesisLibraryPage = () => {
   const projectData = moreInformation.find(
@@ -27,6 +48,13 @@ const ThesisLibraryPage = () => {
     <main className="flex min-h-screen w-full flex-col bg-[var(--background)]">
       <Header />
       <article className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start overflow-y-auto px-6 py-12">
+        <Breadcrumb 
+          items={[
+            { label: "Projects", href: "/#project" },
+            { label: "Thesis Library Portal" }
+          ]} 
+        />
+        
         <header>
           <h1 className="mb-6 text-left text-4xl font-bold">
             {projectData.title}
@@ -61,16 +89,16 @@ const ThesisLibraryPage = () => {
           <section>
             <div className="grid w-full grid-cols-1 gap-10">
               {projectData.snippets.map((snippet, index) => (
-                <div key={index} className="flex flex-col items-start">
-                  <p className="m-3 place-self-center text-2xl font-medium">
-                    {snippet.label}
-                  </p>
+                <figure key={index} className="flex flex-col items-start">
                   <img
                     src={snippet.image}
                     alt={snippet.alt || snippet.label}
                     className="w-full rounded-xl object-cover shadow-md"
                   />
-                </div>
+                  <figcaption className="m-3 place-self-center text-2xl font-medium">
+                    {snippet.label}
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </section>

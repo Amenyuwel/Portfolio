@@ -9,6 +9,40 @@ import { FiEye } from "react-icons/fi";
 const LandingPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Structured Data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Emmanuel D. Malagamba",
+    "alternateName": "Amenyuwel",
+    "jobTitle": "Full-Stack Web & Mobile Developer",
+    "description": "Full-Stack Web & Mobile Developer with a Bachelor's degree in Computer Science. Building scalable and user-friendly web and mobile applications.",
+    "url": "https://amenyuwel.netlify.app",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "General Santos",
+      "addressCountry": "Philippines"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "STI College"
+    },
+    "knowsAbout": [
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Python",
+      "Machine Learning",
+      "Full-Stack Development",
+      "Mobile Development"
+    ],
+    "sameAs": [
+      "https://github.com/Amenyuwel",
+      "https://www.linkedin.com/in/amenyuwel/"
+    ]
+  };
+
   useEffect(() => {
     // Initialize isDarkMode based on HTML class
     const checkDarkMode = () => {
@@ -33,7 +67,16 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <main className="relative flex h-screen w-full flex-col items-center">
+    <>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+      
+      <main className="relative flex h-screen w-full flex-col items-center">
       <HeroPattern
         dotColor={isDarkMode ? "#ebebeb" : "#111111"}
         dotSize={0.5}
@@ -128,6 +171,7 @@ const LandingPage = () => {
         </section>
       </section>
     </main>
+    </>
   );
 };
 

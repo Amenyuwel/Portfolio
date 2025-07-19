@@ -31,7 +31,7 @@ const ProjectsGrid = () => {
             className="h-full w-full cursor-pointer rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
           />
           <section className="text-main absolute bottom-0 flex w-full translate-y-full cursor-pointer flex-col bg-[var(--cover)] p-4 transition-transform duration-500 ease-in-out group-hover:translate-y-0">
-            <h1 className="text-2xl font-bold">{project.title}</h1>
+            <h3 className="text-2xl font-bold">{project.title}</h3>
             <p className="text-s mt-2 font-medium">{project.description}</p>
             <span className="mt-4 mb-1 text-sm font-semibold text-[var(--text-secondary)]">
               TECH STACK

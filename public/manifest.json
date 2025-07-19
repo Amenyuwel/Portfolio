@@ -1,0 +1,35 @@
+{
+  "name": "Emmanuel D. Malagamba - Portfolio",
+  "short_name": "Amenyuwel Portfolio",
+  "description": "Full-Stack Web & Mobile Developer Portfolio showcasing projects and experience",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#4f86f7",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/images/Profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/Profile.jpg", 
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/Example.PNG",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Portfolio Homepage"
+    }
+  ]
+}
