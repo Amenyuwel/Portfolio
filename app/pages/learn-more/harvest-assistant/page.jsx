@@ -5,31 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
 
-export const metadata = {
-  title: "Harvest Assistant Project - Emmanuel D. Malagamba",
-  description:
-    "A thesis project designed to bridge the gap between the City Agriculturist's Office and farmers. Features pest identification and yield forecasting using deep learning.",
-  keywords:
-    "Harvest Assistant, Agriculture, Machine Learning, TensorFlow, Pest Detection, Yield Forecasting, Mobile Development",
-  openGraph: {
-    title: "Harvest Assistant Project - Emmanuel D. Malagamba",
-    description:
-      "Agriculture-focused app with pest identification and yield forecasting using deep learning.",
-    images: ["/images/Harvest-Assistant/Harvest_Mobile-Dashboard.jpg"],
-    url: "https://amenyuwel.netlify.app/pages/learn-more/harvest-assistant",
-  },
-  twitter: {
-    title: "Harvest Assistant Project - Emmanuel D. Malagamba",
-    description:
-      "Agriculture-focused app with pest identification and yield forecasting using deep learning.",
-    images: ["/images/Harvest-Assistant/Harvest_Mobile-Dashboard.jpg"],
-  },
-  alternates: {
-    canonical:
-      "https://amenyuwel.netlify.app/pages/learn-more/harvest-assistant",
-  },
-};
-
 const HarvestAssistantPage = () => {
   const projectData = moreInformation.find(
     (project) => project.title === "Harvest Assistant",

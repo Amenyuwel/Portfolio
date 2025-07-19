@@ -5,30 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
 
-export const metadata = {
-  title: "AI-Refine Project - Emmanuel D. Malagamba",
-  description:
-    "Built a drag-and-drop image augmentation tool using Next.js and PocketBase. Enables flipping, grayscale, blur, and brightness transformations to enhance CNN model accuracy.",
-  keywords:
-    "AI-Refine, Image Augmentation, Next.js, PocketBase, Machine Learning, CNN, Computer Vision",
-  openGraph: {
-    title: "AI-Refine Project - Emmanuel D. Malagamba",
-    description:
-      "Built a drag-and-drop image augmentation tool using Next.js and PocketBase.",
-    images: ["/images/AI-Refine/AI-Refine_Landing.png"],
-    url: "https://amenyuwel.netlify.app/pages/learn-more/ai-refine",
-  },
-  twitter: {
-    title: "AI-Refine Project - Emmanuel D. Malagamba",
-    description:
-      "Built a drag-and-drop image augmentation tool using Next.js and PocketBase.",
-    images: ["/images/AI-Refine/AI-Refine_Landing.png"],
-  },
-  alternates: {
-    canonical: "https://amenyuwel.netlify.app/pages/learn-more/ai-refine",
-  },
-};
-
 const AiRefinePage = () => {
   const projectData = moreInformation.find(
     (project) => project.title === "AI-Refine",

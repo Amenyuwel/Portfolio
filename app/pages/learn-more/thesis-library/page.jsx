@@ -5,30 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
 
-export const metadata = {
-  title: "Thesis Library Portal - Emmanuel D. Malagamba",
-  description:
-    "Enhanced UI performance and responsive design for academic thesis library portal using React and TailwindCSS.",
-  keywords:
-    "Thesis Library, Academic Portal, React, TailwindCSS, UI/UX, Responsive Design, Frontend Development",
-  openGraph: {
-    title: "Thesis Library Portal - Emmanuel D. Malagamba",
-    description:
-      "Academic thesis library portal with enhanced responsive design.",
-    images: ["/images/Thesis Library/Library_Landing-Page.PNG"],
-    url: "https://amenyuwel.netlify.app/pages/learn-more/thesis-library",
-  },
-  twitter: {
-    title: "Thesis Library Portal - Emmanuel D. Malagamba",
-    description:
-      "Academic thesis library portal with enhanced responsive design.",
-    images: ["/images/Thesis Library/Library_Landing-Page.PNG"],
-  },
-  alternates: {
-    canonical: "https://amenyuwel.netlify.app/pages/learn-more/thesis-library",
-  },
-};
-
 const ThesisLibraryPage = () => {
   const projectData = moreInformation.find(
     (project) => project.title === "Thesis Library Portal",

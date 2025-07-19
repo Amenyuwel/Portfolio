@@ -5,26 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
 
-export const metadata = {
-  title: "Kave Pharmacy POS System - Emmanuel D. Malagamba",
-  description: "Delivered a functional POS system using the MERN stack with integrated inventory and transaction tracking for pharmacy management.",
-  keywords: "POS System, MERN Stack, Inventory Management, Pharmacy, MongoDB, Express, React, Node.js",
-  openGraph: {
-    title: "Kave Pharmacy POS System - Emmanuel D. Malagamba",
-    description: "Full-stack POS system with inventory tracking for pharmacy management.",
-    images: ["/images/Kave Pharmacy/Kave_Pharmacy-Overview.png"],
-    url: "https://amenyuwel.netlify.app/pages/learn-more/kave-pharmacy",
-  },
-  twitter: {
-    title: "Kave Pharmacy POS System - Emmanuel D. Malagamba",
-    description: "Full-stack POS system with inventory tracking for pharmacy management.",
-    images: ["/images/Kave Pharmacy/Kave_Pharmacy-Overview.png"],
-  },
-  alternates: {
-    canonical: "https://amenyuwel.netlify.app/pages/learn-more/kave-pharmacy",
-  },
-};
-
 const KavePharmacyPage = () => {
   const projectData = moreInformation.find(
     (project) => project.title === "Kave Pharmacy",

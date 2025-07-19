@@ -5,30 +5,6 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import moreInformation from "../data/information";
 
-export const metadata = {
-  title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-  description:
-    "Implemented sales forecasting using Facebook Prophet and visualized results through dynamic analytics page for appliance shop e-commerce website.",
-  keywords:
-    "E-commerce, Sales Forecasting, Facebook Prophet, Analytics, React, Express, MongoDB, Data Visualization",
-  openGraph: {
-    title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-    description:
-      "Sales forecasting and analytics dashboard for e-commerce platform.",
-    images: ["/images/E-commerce/E-commerce_Analytics.png"],
-    url: "https://amenyuwel.netlify.app/pages/learn-more/e-commerce",
-  },
-  twitter: {
-    title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-    description:
-      "Sales forecasting and analytics dashboard for e-commerce platform.",
-    images: ["/images/E-commerce/E-commerce_Analytics.png"],
-  },
-  alternates: {
-    canonical: "https://amenyuwel.netlify.app/pages/learn-more/e-commerce",
-  },
-};
-
 const EcommercePage = () => {
   const projectData = moreInformation.find(
     (project) => project.title === "Appliance Shop E-commerce Website",
