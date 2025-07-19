@@ -50,7 +50,7 @@ const KavePharmacyPage = () => {
       <article className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start overflow-y-auto px-6 py-12">
         <Breadcrumb 
           items={[
-            { label: "Projects", href: "/#project" },
+            { label: "Contributions", href: "/#contribution" },
             { label: "Kave Pharmacy" }
           ]} 
         />

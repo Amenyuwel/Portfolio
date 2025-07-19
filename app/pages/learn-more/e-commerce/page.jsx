@@ -7,17 +7,21 @@ import moreInformation from "../data/information";
 
 export const metadata = {
   title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-  description: "Implemented sales forecasting using Facebook Prophet and visualized results through dynamic analytics page for appliance shop e-commerce website.",
-  keywords: "E-commerce, Sales Forecasting, Facebook Prophet, Analytics, React, Express, MongoDB, Data Visualization",
+  description:
+    "Implemented sales forecasting using Facebook Prophet and visualized results through dynamic analytics page for appliance shop e-commerce website.",
+  keywords:
+    "E-commerce, Sales Forecasting, Facebook Prophet, Analytics, React, Express, MongoDB, Data Visualization",
   openGraph: {
     title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-    description: "Sales forecasting and analytics dashboard for e-commerce platform.",
+    description:
+      "Sales forecasting and analytics dashboard for e-commerce platform.",
     images: ["/images/E-commerce/E-commerce_Analytics.png"],
     url: "https://amenyuwel.netlify.app/pages/learn-more/e-commerce",
   },
   twitter: {
     title: "E-commerce Analytics Project - Emmanuel D. Malagamba",
-    description: "Sales forecasting and analytics dashboard for e-commerce platform.",
+    description:
+      "Sales forecasting and analytics dashboard for e-commerce platform.",
     images: ["/images/E-commerce/E-commerce_Analytics.png"],
   },
   alternates: {
@@ -48,13 +52,13 @@ const EcommercePage = () => {
     <main className="flex min-h-screen w-full flex-col bg-[var(--background)]">
       <Header />
       <article className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start overflow-y-auto px-6 py-12">
-        <Breadcrumb 
+        <Breadcrumb
           items={[
-            { label: "Projects", href: "/#project" },
-            { label: "E-commerce Website" }
-          ]} 
+            { label: "Contributions", href: "/#contribution" },
+            { label: "E-commerce Website" },
+          ]}
         />
-        
+
         <header>
           <h1 className="mb-6 text-left text-4xl font-bold">
             {projectData.title}
