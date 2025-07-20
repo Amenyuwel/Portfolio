@@ -39,7 +39,7 @@ const VerticalTimeline = ({ items }) => {
             </h3>
             <h4 className="text-lg font-semibold">{item.role}</h4>
             <p className="text-[var(--text-secondary)]">{item.period}</p>
-            <ul className="mt-2 list-disc pr-2 pl-4 text-justify text-[var(--text-secondary)]">
+            <ul className="mt-2 list-disc pr-2 pl-4 text-balance leading-relaxed text-[var(--text-secondary)]">
               {item.description.map((desc, idx) => (
                 <li key={idx} className="font-medium">
                   {desc}

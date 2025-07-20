@@ -99,7 +99,7 @@ const LandingPage = () => {
                     className="mr-3 h-5 w-5 text-red-600"
                     aria-hidden="true"
                   />
-                  <span className="sm: font-semibold text-[var(--text-secondary)]">
+                  <span className="sm:font-normal text-[var(--text-secondary)]">
                     General Santos, Philippines
                   </span>
                 </p>
@@ -139,9 +139,9 @@ const LandingPage = () => {
             </div>
           </header>
 
-          {/* Description */}
+          {/* Description */} 
           <section className="mb-2 w-full">
-            <h2 className="font-serif text-xl leading-relaxed text-[var(--text-main)] md:text-2xl lg:text-3xl text-justify">
+            <h2 className="font-normal text-pretty text-xl leading-relaxed text-[var(--text-main)] md:text-2xl lg:text-3xl text-">
               Full-Stack Web & Mobile Developer, with a Bachelor's degree in Computer Science.
               Building scalable and user-friendly web and mobile applications.
             </h2>
