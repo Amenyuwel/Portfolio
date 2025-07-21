@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const springValues = {
@@ -11,10 +11,8 @@ export default function TiltedCard({
   imageSrc = "images/Profile.jpg",
   altText = "Emmanuel D. Malagamba",
   captionText = "Full-Stack Developer",
-  containerHeight = "150px", // Increased container height
-  containerWidth = "150px", // Set a fixed width for the container
-  imageHeight = "150px", // Increased image height
-  imageWidth = "150px", // Set a fixed width for the image
+  maxWidth = 200, // Maximum width constraint
+  maxHeight = 200, // Maximum height constraint
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
   showMobileWarning = true,
@@ -23,6 +21,12 @@ export default function TiltedCard({
   displayOverlayContent = false,
 }) {
   const ref = useRef(null);
+  const [imageDimensions, setImageDimensions] = useState({
+    width: 150,
+    height: 150,
+    isLoaded: false
+  });
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useSpring(useMotionValue(0), springValues);
@@ -36,6 +40,44 @@ export default function TiltedCard({
   });
 
   const [lastY, setLastY] = useState(0);
+
+  // Load image and calculate optimal dimensions
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      const { naturalWidth, naturalHeight } = img;
+      const aspectRatio = naturalWidth / naturalHeight;
+      
+      let width, height;
+      
+      // Calculate dimensions while maintaining aspect ratio and respecting max constraints
+      if (aspectRatio > 1) {
+        // Landscape image
+        width = Math.min(maxWidth, naturalWidth);
+        height = width / aspectRatio;
+        if (height > maxHeight) {
+          height = maxHeight;
+          width = height * aspectRatio;
+        }
+      } else {
+        // Portrait or square image
+        height = Math.min(maxHeight, naturalHeight);
+        width = height * aspectRatio;
+        if (width > maxWidth) {
+          width = maxWidth;
+          height = width / aspectRatio;
+        }
+      }
+      
+      setImageDimensions({
+        width: Math.round(width),
+        height: Math.round(height),
+        isLoaded: true
+      });
+    };
+    
+    img.src = imageSrc;
+  }, [imageSrc, maxWidth, maxHeight]);
 
   function handleMouse(e) {
     if (!ref.current) return;
@@ -71,13 +113,22 @@ export default function TiltedCard({
     rotateFigcaption.set(0);
   }
 
+  // Show loading placeholder until image dimensions are calculated
+  if (!imageDimensions.isLoaded) {
+    return (
+      <div className="flex items-center justify-center" style={{ width: maxWidth, height: maxHeight }}>
+        <div className="animate-pulse bg-gray-200 rounded-[15px]" style={{ width: 150, height: 150 }} />
+      </div>
+    );
+  }
+
   return (
     <figure
       ref={ref}
       className="relative flex h-full w-full flex-col items-center justify-center [perspective:800px]"
       style={{
-        height: containerHeight,
-        width: containerWidth,
+        height: `${imageDimensions.height}px`,
+        width: `${imageDimensions.width}px`,
       }}
       onMouseMove={handleMouse}
       onMouseEnter={handleMouseEnter}
@@ -92,8 +143,8 @@ export default function TiltedCard({
       <motion.div
         className="relative [transform-style:preserve-3d]"
         style={{
-          width: imageWidth,
-          height: imageHeight,
+          width: `${imageDimensions.width}px`,
+          height: `${imageDimensions.height}px`,
           rotateX,
           rotateY,
           scale,
@@ -102,10 +153,12 @@ export default function TiltedCard({
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="absolute top-0 left-0 [transform:translateZ(0)] rounded-[15px] object-cover will-change-transform"
+          className="absolute top-0 left-0 [transform:translateZ(0)] rounded-[15px] will-change-transform"
           style={{
-            width: imageWidth,
-            height: imageHeight,
+            width: `${imageDimensions.width}px`,
+            height: `${imageDimensions.height}px`,
+            objectFit: 'contain',
+            objectPosition: 'center',
           }}
         />
 
