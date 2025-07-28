@@ -52,7 +52,7 @@ const ProjectsGrid = () => {
                 </div>
               ))}
             </div>
-            <Button href={project.learnMorePath} />
+            {/* <Button href={project.learnMorePath} /> */}
           </section>
         </article>
       ))}

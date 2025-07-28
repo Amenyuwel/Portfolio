@@ -52,7 +52,7 @@ const ContributionsGrid = () => {
                 </div>
               ))}
             </div>
-            <Button href={contribution.learnMorePath} />
+            {/* <Button href={contribution.learnMorePath} /> */}
           </section>
         </article>
       ))}
