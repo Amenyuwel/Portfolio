@@ -5,7 +5,7 @@ import React from "react";
 const ProjectPage = () => {
   return (
     <main className="flex h-full w-full items-center justify-center py-8">
-      <section className="container mx-auto px-4 lg:w-[60%] xl:w-[50%]">
+  <section className="container mx-auto mb-8 flex h-full w-full max-w-full flex-col px-4 lg:w-[60%] xl:w-[50%]">
         <article className="mb-8">
           <h2 className="text-main text-left text-4xl font-bold sm:text-5xl">
             My Projects
