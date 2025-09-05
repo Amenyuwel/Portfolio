@@ -2,10 +2,11 @@ const timelineItems = [
   {
     title: "Freelance Full-Stack Developer",
     role: "Full-Stack Web Developer",
-    period: "June 2025 – Present",
+    period: "June 2025 – July 2025",
     description: [
-      "Continued feature development and maintenance of the POS system in collaboration with the lead developer.",
-      "Implemented updates across both front-end and back-end using the MERN stack.",
+      "Maintained and enhanced a production-ready POS system, adding new features and resolving bugs to ensure system stability.",
+      "Collaborated with lead developer on code reviews and system improvements.",
+      "Supported ongoing development using MERN stack technologies."
     ],
   },
   {
@@ -13,9 +14,9 @@ const timelineItems = [
     role: "Contributor",
     period: "May 2025 – July 2025",
     description: [
-      "Implemented sales forecasting using Facebook Prophet with interactive front-end visualizations.",
-      "Designed and integrated a dedicated analytics page for data insights.",
-      "Developed CRUD functionalities for seamless front-end to back-end data flow.",
+      "Integrated sales forecasting using Facebook Prophet and displayed results through interactive front-end visualizations.",
+      "Built interactive analytics dashboard displaying sales trends and customer insights.",
+      "Built RESTful API with complete CRUD operations and secure authentication, enabling seamless and reliable data flow between front-end and back-end.",
     ],
   },
   {
@@ -23,7 +24,8 @@ const timelineItems = [
     role: "Contributor",
     period: "April 2025",
     description: [
-      "Enhanced UI performance by improving responsiveness and refactoring components for maintainability.",
+      "Enhanced UI performance and responsiveness across multiple device formats.",
+      "Refactored architecture, reducing file complexity and improving maintainability.",
     ],
   },
   {
@@ -31,8 +33,9 @@ const timelineItems = [
     role: "Project Owner",
     period: "April 2025",
     description: [
-      "Built a drag-and-drop image augmentation tool using Next.js and PocketBase.",
-      "Enabled flipping, grayscale, blur, and brightness transformations to enhance CNN model accuracy.",
+      "Built responsive web application using Next.js and PocketBase for CNN model training enhancement.",
+      "Implemented drag-and-drop functionality with real-time image processing (flip, grayscale, blur, brightness).",
+      "Enhanced CNN model training by developing a dataset refinement tool with image augmentation features (flip, blur, grayscale, brightness)."
     ],
   },
   {
@@ -40,9 +43,9 @@ const timelineItems = [
     role: "Full-Stack Software Developer",
     period: "January 2025 – May 2025",
     description: [
-      "Delivered a functional POS system using the MERN stack with integrated inventory tracking.",
-      "Ensured seamless user experience across devices through responsive design implementation.",
-      "Improved team productivity through Agile Scrum practices: sprint planning, daily standups, and iterative releases.",
+      "Delivered a functional POS system by contributing to the full-stack development using the MERN stack with integrated inventory tracking.",
+      "Ensured seamless user experience across devices by implementing responsive designs.",
+      "Contributed to a 4-member Agile Scrum team, participating in sprint planning, code reviews and daily stand-ups to deliver features on schedule.",
     ],
   },
   {
@@ -50,7 +53,9 @@ const timelineItems = [
     role: "Front-End Developer",
     period: "March 2024",
     description: [
-      "Secured 1st Runner-Up in a 6-hour coding challenge by developing a Java-based hotel reservation mobile app.",
+      "Led front-end development in 6-hour coding challenge with 3-person team",
+      "Developed Java-based hotel reservation mobile application",
+      "Demonstrated rapid prototyping and teamwork skills under pressure",
     ],
   },
   {
@@ -58,9 +63,10 @@ const timelineItems = [
     role: "Full-Stack Mobile Developer",
     period: "January 2024 – November 2024",
     description: [
-      "Empowered farmers through a cross-platform app for pest identification and yield forecasting.",
-      "Applied Agile Spiral model to ensure iterative progress and effective risk mitigation.",
-    ],
+      "Built mobile platform for farmers with pest image classification using TensorFlow/Keras trained and deployed custom ML model achieving 96.5% classification accuracy.",
+      "Designed features for income estimation, seasonal pest activity, and yield forecasting.",
+      "Conducted alpha and beta tests with farmers; achieved strong adoption for pest classification and harvest planning.",
+    ]
   },
 ];
 
