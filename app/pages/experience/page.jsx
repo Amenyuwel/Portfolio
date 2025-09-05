@@ -35,7 +35,7 @@ const ExperiencePage = () => {
       />
 
       <main className="flex min-h-screen w-full items-center justify-center">
-        <section className="container mx-auto w-full max-w-full px-4 py-8 lg:w-[67%] xl:w-full">
+        <section className="container mx-auto w-full max-w-full px-4 py-8 lg:w-[67%] xl:w-[73%]">
           <h2 className="text-main mb-8 ml-4 text-left text-4xl font-bold sm:text-5xl">
             My Experience
           </h2>
