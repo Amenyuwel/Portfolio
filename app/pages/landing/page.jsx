@@ -151,7 +151,7 @@ const LandingPage = () => {
         <section className="mt-4 flex w-full flex-row items-center justify-center gap-3 md:mt-6 md:gap-4">
           {/* RESUME */}
           <a
-            href="/Resume/Emmanuel_Malagamba_CV3.pdf"
+            href="/Resume/Emmanuel_Malagamba.pdf"
             download="Emmanuel_Malagamba's_Resume.pdf"
             className="rounded-lg bg-[var(--opposite)] px-4 py-2 font-semibold text-[var(--background)] transition-all hover:scale-105 hover:opacity-90 md:px-6 md:py-3"
             aria-label="Download CV"
