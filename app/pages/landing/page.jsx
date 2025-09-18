@@ -152,14 +152,14 @@ const LandingPage = () => {
           {/* RESUME */}
           <a
             href="/Resume/Emmanuel_Malagamba.pdf"
-            download="Emmanuel_Malagamba's_Resume.pdf"
+            download="Emmanuel_Malagamba's_CV.pdf"
             className="rounded-lg bg-[var(--opposite)] px-4 py-2 font-semibold text-[var(--background)] transition-all hover:scale-105 hover:opacity-90 md:px-6 md:py-3"
             aria-label="Download CV"
           >
             Download CV
           </a>
           <a
-            href="/Resume/Emmanuel_Malagamba_CV3.pdf"
+            href="/Resume/Emmanuel_Malagamba.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg border bg-[var(--opposite)] px-4 py-2 font-semibold text-[var(--background)] transition-all hover:scale-105 hover:bg-[var(--opposite)] hover:text-[var(--background)] md:px-6 md:py-3"

@@ -34,12 +34,16 @@ const ExperiencePage = () => {
         }}
       />
 
-      <main className="flex min-h-screen w-full items-center justify-center">
-        <section className="container mx-auto w-full max-w-full px-4 py-8 lg:w-[67%] xl:w-[73%]">
-          <h2 className="text-main mb-8 ml-4 text-left text-4xl font-bold sm:text-5xl">
-            My Experience
-          </h2>
-          <VerticalTimeline items={timelineItems} />
+      <main className="flex h-full w-full flex-col items-center justify-center py-8">
+        <section className="mb-8 flex h-full w-full max-w-full flex-col container mx-auto px-4 lg:w-[60%] xl:w-[60%]">
+          <article className="mb-8">
+            <h2 className="text-main text-left text-4xl font-bold sm:text-5xl">
+              My Experience
+            </h2>
+          </article>
+          <div className="bg-main mb-8 w-full rounded-lg p-6">
+            <VerticalTimeline items={timelineItems} />
+          </div>
         </section>
       </main>
     </>
